@@ -8263,8 +8263,8 @@ a.text-dark:hover {
   margin-bottom: 30px;
 }
 .portfolio-block.block-intro .avatar {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
