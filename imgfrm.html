@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Place Your Order</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.html">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/s.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.html">
+<link rel="manifest" href="site.html">
+<link rel="mask-icon" href="safari-pinned-tab.html" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js-1.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js.css">
+    <link rel="stylesheet" href="assets/css/Button-Hover-Animate.css">
+    <link rel="stylesheet" href="assets/css/Card-hover-affect-2.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Parallax-Scroll-Effect.css">
+    <link rel="stylesheet" href="assets/css/Responsive-footer-1.css">
+    <link rel="stylesheet" href="assets/css/Responsive-footer.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="index.html"><strong>Sukhwani Frames</strong><br></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                   <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="projects-grid-cards.html">Catalogue</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="blog.html">Contact us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="cv.html">Place Order</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="ChatBot.html">ChatBot</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main style="height: 600px;" class="page projects-page">
+       <!-- <center><img id="pic" src=""></center>
+        <button id="btnprev">Back</button>
+        <button id="btnnext">Next</button>
+        <script type="text/javascript">
+            var planets=[
+{name:"Frame 1",src:"assets/img/fr1.jpg"}
+{name:"Frame 2",src:"assets/img/fr2.jpg"}
+{name:"Frame 3",src:"assets/img/fr3.jpg"}
+            ];
+            var endofplanets=planets.length;
+            var i=-1;
+            btnprev.addEventListener('click',previousplanet);
+            btnnext.addEventListener('click',nextplanet);
+            func
+        </script>
+        <button onclick="document.getElementById('myImage').src="assets/img/fr2.jpg">Next</button>
+
+<img id="myImage" src="assets/img/fr1" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src="assets/img/fr1.jpg">Previous</button>
+-->
+<center>
+
+<div style="position: relative;right:7%;top: 80px;text-align: center;">
+<div><img id="planetImage" height="300px" width="240px" style="position: absolute;top: 100px; z-index: 1;  src=""/>
+<img id="planetIm" height="210px" width="150px" style="position: absolute;align-items: center;vertical-align: middle; margin: auto;margin-top: 45px;top:100px;margin-left: 45px;z-index: 2;" src=""/>
+   
+  </center>
+  </div>
+  <center>
+<button id="btnPrev">Previous frame</button>
+<button id="btnNext">Next frame</button><br>
+<br>
+<button id="btnP">Previous image</button>
+<button id="btnN">Next image</button>
+<br>
+ <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="planetName"></span><br><span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="planetN" style="text-align: center;"></span></div>
+<br>
+</center>
+<script type="text/javascript"> var planets = [
+  {name:"PG101", src: "assets/img/fr1.jpg"},
+  {name:"PPL101", src: "assets/img/fr2.jpg"},
+  {name:"PR101", src: "assets/img/fr3.jpg"},
+  {name:"PO101", src: "assets/img/fr4.jpg"},
+  {name:"PP101", src: "assets/img/fr5.jpg"},
+  {name:"Saturn", src: "assets/img/fr6.jpg"},
+  {name:"Uranus", src: "assets/img/fr7.jpg"},
+  {name:"Neptune", src: "assets/img/fr8.jpg"}
+];
+
+var endofplanets=planets.length;
+var i = -1;
+
+btnPrev.addEventListener('click', previousplanet);
+btnNext.addEventListener('click', nextplanet);
+
+function nextplanet(){
+i++;
+if(i==endofplanets) i=0;
+
+  planetName.innerHTML=planets[i].name;
+  planetImage.setAttribute('src', planets[i].src);
+}
+
+function previousplanet(){
+i--;
+if(i<0) i=endofplanets-1;
+  planetName.innerHTML=planets[i].name;
+  planetImage.setAttribute('src', planets[i].src);
+  
+}
+
+nextplanet();
+</script>
+<script type="text/javascript"> var planets11 = [
+ 
+  {name:"NTG4" ,src: "assets/img/g4.jpg"},
+   {name:"NTS2" ,src: "assets/img/s2.jpg"},
+  {name:"NTH2", src: "assets/img/h2.jpg"},
+  {name:"NTGN2", src: "assets/img/gn2.jpg"},
+  {name:"NTSB2", src: "assets/img/sb2.jpg"},
+  {name:"NTS1", src: "assets/img/s1.jpg"},
+  {name:"NTRK1", src: "assets/img/rk1.jpg"},
+  {name:"NTRD1", src: "assets/img/rd1.jpg"}
+];
+
+var endofplanets=planets11.length;
+var i = -1;
+
+btnP.addEventListener('click', previousp);
+btnN.addEventListener('click', nextp);
+
+function nextp(){
+i++;
+if(i==endofplanets) i=0;
+
+  planetN.innerHTML=planets11[i].name;
+  planetIm.setAttribute('src', planets11[i].src);
+}
+
+function previousp(){
+i--;
+if(i<0) i=endofplanets-1;
+  planetN.innerHTML=planets11[i].name;
+  planetIm.setAttribute('src', planets11[i].src);
+  
+}
+
+nextplanet();
+</script>
+    </main>
+    <footer class="page-footer" style="background-color: grey; height: 100px;">
+       
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Animated-Type-Heading.js"></script>
+    <script src="assets/js/Bold-BS4-Jumbotron-with-Particles-js.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/Card-hover-affect-2.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
