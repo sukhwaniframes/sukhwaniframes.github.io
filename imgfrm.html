@@ -95,7 +95,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   {name:"Neptune", src: "assets/img/fr8.jpg"}
 ];
 
-var endofframe1=frame1.length;
+var endoffra=frame1.length;
 var i = -1;
 
 btnPrev.addEventListener('click', previousframe1t);
@@ -111,7 +111,7 @@ if(i==endofframe1) i=0;
 
 function previousframe1(){
 i--;
-if(i<0) i=endofframe1-1;
+if(i<0) i=endoffra-1;
   frame1Name.innerHTML=frame1[i].name;
   frame1Image.setAttribute('src', frame1[i].src);
   
