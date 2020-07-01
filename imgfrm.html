@@ -65,33 +65,11 @@
 document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
     <main style="height: 600px;" class="page projects-page">
-       <!-- <center><img id="pic" src=""></center>
-        <button id="btnprev">Back</button>
-        <button id="btnnext">Next</button>
-        <script type="text/javascript">
-            var planets=[
-{name:"Frame 1",src:"assets/img/fr1.jpg"}
-{name:"Frame 2",src:"assets/img/fr2.jpg"}
-{name:"Frame 3",src:"assets/img/fr3.jpg"}
-            ];
-            var endofplanets=planets.length;
-            var i=-1;
-            btnprev.addEventListener('click',previousplanet);
-            btnnext.addEventListener('click',nextplanet);
-            func
-        </script>
-        <button onclick="document.getElementById('myImage').src="assets/img/fr2.jpg">Next</button>
-
-<img id="myImage" src="assets/img/fr1" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src="assets/img/fr1.jpg">Previous</button>
--->
 <center>
 
 <div style="position: relative;right:30%;top: 80px;text-align: center;">
 <div><img id="planetImage" height="300px" width="240px" style="position: absolute;top: 250px; z-index: 1;  src=""/>
 <img id="planetIm" height="210px" width="150px" style="position: absolute;align-items: center;vertical-align: middle; margin: auto;margin-top: 45px;top:250px;margin-left: 45px;z-index: 2;" src=""/>
-   
   </center>
   </div>
   <center>
@@ -106,7 +84,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
  <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="planetName"></span><br><span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="planetN" style="text-align: center;"></span></div>
 <br>
 </center>
-<script type="text/javascript"> var planets = [
+<script type="text/javascript"> var frame1 = [
   {name:"PG101", src: "assets/img/fr1.jpg"},
   {name:"PPL101", src: "assets/img/fr2.jpg"},
   {name:"PR101", src: "assets/img/fr3.jpg"},
@@ -117,31 +95,31 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   {name:"Neptune", src: "assets/img/fr8.jpg"}
 ];
 
-var endofplanets=planets.length;
+var endofframe1=frame1.length;
 var i = -1;
 
-btnPrev.addEventListener('click', previousplanet);
-btnNext.addEventListener('click', nextplanet);
+btnPrev.addEventListener('click', previousframe1t);
+btnNext.addEventListener('click', nextframe1);
 
-function nextplanet(){
+function nextframe1(){
 i++;
-if(i==endofplanets) i=0;
+if(i==endofframe1) i=0;
 
-  planetName.innerHTML=planets[i].name;
-  planetImage.setAttribute('src', planets[i].src);
+  frame1Name.innerHTML=frame1[i].name;
+  frame1Image.setAttribute('src', frame1[i].src);
 }
 
-function previousplanet(){
+function previousframe1(){
 i--;
-if(i<0) i=endofplanets-1;
-  planetName.innerHTML=planets[i].name;
-  planetImage.setAttribute('src', planets[i].src);
+if(i<0) i=endofframe1-1;
+  frame1Name.innerHTML=frame1[i].name;
+  frame1Image.setAttribute('src', frame1[i].src);
   
 }
 
-nextplanet();
+nextframe1();
 </script>
-<script type="text/javascript"> var planets11 = [
+<script type="text/javascript"> var frame2 = [
  
   {name:"NTG4" ,src: "assets/img/g4.jpg"},
    {name:"NTS2" ,src: "assets/img/s2.jpg"},
@@ -153,29 +131,29 @@ nextplanet();
   {name:"NTRD1", src: "assets/img/rd1.jpg"}
 ];
 
-var endofplanets=planets11.length;
+var endofframe2=frame2.length;
 var i = -1;
 
-btnP.addEventListener('click', previousp);
-btnN.addEventListener('click', nextp);
+btnP.addEventListener('click', previousframe2);
+btnN.addEventListener('click', nextframe2);
 
-function nextp(){
+function nextframe2(){
 i++;
-if(i==endofplanets) i=0;
+if(i==endofframe2) i=0;
 
-  planetN.innerHTML=planets11[i].name;
-  planetIm.setAttribute('src', planets11[i].src);
+  frame2Name.innerHTML=frame2[i].name;
+  frame2Image.setAttribute('src', frame2[i].src);
 }
 
-function previousp(){
+function previousframe2(){
 i--;
-if(i<0) i=endofplanets-1;
-  planetN.innerHTML=planets11[i].name;
-  planetIm.setAttribute('src', planets11[i].src);
+if(i<0) i=endofframe2-1;
+  frame2Name.innerHTML=frame2[i].name;
+  frame2Image.setAttribute('src', frame2[i].src);
   
 }
 
-nextplanet();
+nextframe2();
 </script>
     </main>
 
