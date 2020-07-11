@@ -140,11 +140,52 @@ document.addEventListener('contextmenu', event => event.preventDefault());
             <div class="container">
                <div class="heading">
                    <center> <h3 class="text1">Catalogue</h3></center> 
+                   
+                <div class="container" style="display: inline-block; text-align: center;">
+ 
+  <!-- Trigger the modal with a button -->
+  <button style="color: grey;background-color: white; border: none; outline: none;" id="a122" type="button" data-toggle="modal" data-target="#myModal" >Watch Tutorial(How to use)</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div style="text-align: center;display: inline-block;" class="modal-header">
+           <span style="font-family:serif; font-size:20px;">How To use</span>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+<center><video style="object-fit:cover;"width="80%" height="400px" controls>
+  <source  src="assets/img/vd1.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+         </center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
                 </div>
            
           
            <br><br>
-               
+               <script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+     setTimeout(mdl, 3000)
+    
+
+ });
+  function mdl() {
+document.getElementById("a122").click();}
+</script>
              <center>
                <a class="btn btn-primary link" style="color:#ffffff ;background-color: #dc143c;box-shadow: 0 0 0 0.2rem rgba(223, 37, 37, 0.5);border-color: #cc0000; width: 300px; height: 40px; " role="button" onclick="myFunction2()" id="link">Pictures</a><br><br>
           <a class="btn btn-primary link" style="color:#ffffff ; width: 300px; height: 40px; " role="button" onclick="myFunction1()" id="link">Frames</a>
