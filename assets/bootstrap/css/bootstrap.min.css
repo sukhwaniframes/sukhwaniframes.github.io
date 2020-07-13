@@ -1715,23 +1715,23 @@ pre code {
   background-color: #fff;
   border-color: #8ed2ff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(14, 160, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.2);
 }
 .form-control::-webkit-input-placeholder {
-  color: #6c757d;
+  color:rgba(255,255,255,0.6);
   opacity: 1;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+ color:rgba(255,255,255,0.6);
   opacity: 1;
 }
 .form-control:-ms-input-placeholder,
 .form-control::-ms-input-placeholder {
-  color: #6c757d;
+  color:rgba(255,255,255,0.6);
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color:rgba(255,255,255,0.6);
   opacity: 1;
 }
 .form-control:disabled,
