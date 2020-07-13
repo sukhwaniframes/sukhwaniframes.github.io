@@ -1713,7 +1713,7 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #8ed2ff;
+  border-color: #ffffff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.2);
 }
