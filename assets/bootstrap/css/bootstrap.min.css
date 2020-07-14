@@ -3664,6 +3664,7 @@ input[type="submit"].btn-block {
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
+  outline: 0;
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
@@ -3719,11 +3720,13 @@ input[type="submit"].btn-block {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
+    outline: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 576px) {
   .navbar-expand-sm {
+    outline: 0;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
@@ -3758,12 +3761,14 @@ input[type="submit"].btn-block {
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
+    outline: 0;
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
+    outline: 0;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
@@ -3798,12 +3803,14 @@ input[type="submit"].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
+    outline: 0;
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
+    outline: 0;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
@@ -3838,12 +3845,14 @@ input[type="submit"].btn-block {
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
+    outline: 0;
     padding-right: 0;
     padding-left: 0;
   }
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl {
+    outline: 0;
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
     -ms-flex-pack: start;
