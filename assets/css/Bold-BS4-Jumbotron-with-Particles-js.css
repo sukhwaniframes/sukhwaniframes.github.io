@@ -17,12 +17,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  background: #6819e8;
-  background: -moz-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
-  background: -webkit-linear-gradient(left, #6819e8 0%,#7437d0 35%,#615fde 68%,#6980f2 100%);
-  background: linear-gradient(to right, #6819e8 0%,#7437d0 35%,#615fde 68%,#6980f2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6819e8', endColorstr='#6980f2',GradientType=1 );
-}
+ background: #fd746c;
+  background: -moz-linear-gradient(left, #fd746c 0%, #fd746c 35%, #ff9068 68%, #ff9068 100%);
+  background: -webkit-linear-gradient(left, #fd746c 0%,#fd746c 35%,#ff9068 68%,#ff9068 100%);
+  background: linear-gradient(to right, #fd746c 0%,#fd746c 35%,#ff9068 68%,#ff9068 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd746c', endColorstr='#ff9068',GradientType=1 );}
 
 .jumbotron.jumbotron-main hr {
   border-width: 1px 0px;
