@@ -67,33 +67,26 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
     <main style="height: 600px;" class="page projects-page">
 <center>
-
-<div style="position: relative;right:30%;top: 80px;text-align: center;">
-<div><img id="frame1Image" height="300px" width="240px" style="position: absolute;top: 250px; z-index: 1;  src=""/>
-<img id="frame2Image" height="210px" width="150px" style="position: absolute;align-items: center;vertical-align: middle; margin: auto;margin-top: 45px;top:250px;margin-left: 45px;z-index: 2;" src=""/>
+<div style="position: relative;right:10%;top: 80px;margin-left: 20px;text-align: center;">
+<div><img id="planetImage" height="300px" width="290px" style="position: absolute;align-items: center;vertical-align: middle; margin: auto;top:100px;z-index: 2;" src=""/>
+    <img id="planetIm" height="220px" width="154px"  style="position: absolute;top: 100px; margin-left: 68.7px;margin-top: 40px; z-index: 1;  src=""/>
   </center>
   </div>
   <center>
     <br>
     <br><br><br>
-<button id="btnPrev">Previous frame</button>
-<button id="btnNext">Next frame</button><br>
+<button style="background-color: #ff726f;width:200px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev">Previous frame</button>
+<button style="background-color: #90ee90;width: 200px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext">Next frame</button><br>
 <br>
-<button id="btnP">Previous image</button>
-<button id="btnN">Next image</button>
+<button style="background-color: #ff726f;width:200px;  color: #ffffff; border-radius: 20px;outline: 0;" id="btnP">Previous image</button>
+<button style="background-color: #90ee90;width: 200px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN">Next image</button>
 <br>
  <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="frame1Name"></span><br><span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="frame2Name" style="text-align: center;"></span></div>
 <br>
 </center>
 <script type="text/javascript"> var frame1 = [
-  {name:"PG101", src: "assets/img/fr1.jpg"},
-  {name:"PPL101", src: "assets/img/fr2.jpg"},
-  {name:"PR101", src: "assets/img/fr3.jpg"},
-  {name:"PO101", src: "assets/img/fr4.jpg"},
-  {name:"PP101", src: "assets/img/fr5.jpg"},
-  {name:"Saturn", src: "assets/img/fr6.jpg"},
-  {name:"Uranus", src: "assets/img/fr7.jpg"},
-  {name:"Neptune", src: "assets/img/fr8.jpg"}
+    {name:"PG101", src: "assets/img/frame18.png"},
+    {name:"PG101", src: "assets/img/frame19.png"}
 ];
 
 var endofframe1=frame1.length;
@@ -121,15 +114,13 @@ if(i<0) i=endofframe1-1;
 nextframe1();
 </script>
 <script type="text/javascript"> var frame2 = [
- 
-  {name:"NTG4" ,src: "assets/img/h3.jpg"},
+
+  {name:"NTG4" ,src: "assets/img/sb5.jpg"},
    {name:"NTS2" ,src: "assets/img/sb4.jpg"},
-  {name:"NTH2", src: "assets/img/h2.jpg"},
-  {name:"NTGN2", src: "assets/img/gn2.jpg"},
-  {name:"NTSB2", src: "assets/img/sb2.jpg"},
-  {name:"NTS1", src: "assets/img/s1.jpg"},
-  {name:"NTRK1", src: "assets/img/rk1.jpg"},
-  {name:"NTRD1", src: "assets/img/d1.jpg"}
+    {name:"NTS2" ,src: "assets/img/d1.jpg"},
+     {name:"NTS2" ,src: "assets/img/h3.jpg"},
+      {name:"NTS2" ,src: "assets/img/sb5.jpg"},
+    {name:"NTS2" ,src: "assets/img/sb3.jpg"}
 ];
 
 var endofframe2=frame2.length;
