@@ -75,6 +75,21 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   <center>
     <br>
     <br><br><br>
+      
+<script type="text/javascript">
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
 <button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev">Previous frame</button>
 <button style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext">Next frame</button><br>
 <br>
@@ -86,7 +101,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <br>
  <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="frame1Name"></span><br><span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="frame2Name" style="text-align: center;"></span>
       <br>
-<span style="text-align: center; font-weight: bold;">Price :</span><span  style="text-align: center; font-weight: bold;" id="planetPrc"></span><span  style="text-align: center; font-weight: bold;">+</span><span  style="text-align: center; font-weight: bold;" id="planetPrc1"></span>
+<span style="text-align: center; font-weight: bold;">Price :</span><span  style="text-align: center; font-weight: bold;" id="frame1Prc"></span><span  style="text-align: center; font-weight: bold;">+</span><span  style="text-align: center; font-weight: bold;" id="frame2Prc"></span>
       </div>
 <br>
 </center>
@@ -109,6 +124,7 @@ i++;
 if(i==endofframe1) i=0;
 
   frame1Name.innerHTML=frame1[i].name;
+    frame1Prc.innerHTML=frame1[i].prc;
   frame1Image.setAttribute('src', frame1[i].src);
 }
 
@@ -116,6 +132,7 @@ function previousframe1(){
 i--;
 if(i<0) i=endofframe1-1;
   frame1Name.innerHTML=frame1[i].name;
+     frame1Prc.innerHTML=frame1[i].prc;
   frame1Image.setAttribute('src', frame1[i].src);
   
 }
@@ -143,6 +160,7 @@ i++;
 if(i==endofframe2) i=0;
 
   frame2Name.innerHTML=frame2[i].name;
+     frame2Prc.innerHTML=frame2[i].prc;
   frame2Image.setAttribute('src', frame2[i].src);
 }
 
@@ -150,6 +168,7 @@ function previousframe2(){
 i--;
 if(i<0) i=endofframe2-1;
   frame2Name.innerHTML=frame2[i].name;
+     frame2Prc.innerHTML=frame2[i].prc;
   frame2Image.setAttribute('src', frame2[i].src);
   
 }
