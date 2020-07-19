@@ -81,6 +81,8 @@ document.addEventListener('contextmenu', event => event.preventDefault());
       
 <script type="text/javascript">
      function readURL(input) {
+          document.getElementById("a1").style.display="none";
+             document.getElementById("a2").style.display="none";
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
 
@@ -91,8 +93,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
                 reader.readAsDataURL(input.files[0]);
             }
-          document.getElementById("a1").style.display="none";
-             document.getElementById("a2").style.display="none";
+         
        
        /*      document.getElementById("a4").style.display="none";
           document.getElementById("a5").style.display="none";
