@@ -81,8 +81,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
       
 <script type="text/javascript">
      function readURL(input) {
-          document.getElementById("a1").style.display="none";
-             document.getElementById("a2").style.display="none";
+         
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
 
@@ -94,19 +93,14 @@ document.addEventListener('contextmenu', event => event.preventDefault());
                 reader.readAsDataURL(input.files[0]);
             }
          
-       
-       /*      document.getElementById("a4").style.display="none";
-          document.getElementById("a5").style.display="none";
-             document.getElementById("a6").style.display="none";
-          document.getElementById("a7").style.display="none";
-             document.getElementById("a8").style.display="none";*/
+      
         }
 </script>
 <button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev">Previous frame</button>
 <button style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext">Next frame</button><br>
 <br>
-<button id="a1" style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;" id="btnP">Previous image</button>
-<button id="a2"  style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN">Next image</button>
+<button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;" id="btnP">Previous image</button>
+<button  style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN">Next image</button>
 <br>
       <br>
 <div><input style="background-color: #DA70D6; width: 250px; border:1px solid #000000; border-radius: 10px;" type='file' onchange="readURL(this);" /> <a onclick="myFunction30()"><img height="20px" width="20px" style="margin-left: 10px; margin-bottom: 5px;" src="assets/img/close.png"></a></div><br>
