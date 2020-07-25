@@ -80,7 +80,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     <br><br><br>
       
 <script type="text/javascript">
-     function readURL(input) {
+     function readURL1(input) {
          
             if (input.files && input.files[0]) {
                 var reader = new FileReader();
@@ -96,6 +96,8 @@ document.addEventListener('contextmenu', event => event.preventDefault());
       
         }
 </script>
+      <h2 style="text-align: center; background-color: #ff726f; color: #ffffff; ">9 x 12</h2>
+
 <button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev">Previous frame</button>
 <button style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext">Next frame</button><br>
 <br>
@@ -103,7 +105,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <button  style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN">Next image</button>
 <br>
       <br>
-<div><input style="background-color: #DA70D6; width: 250px; border:1px solid #000000; border-radius: 10px;" type='file' onchange="readURL(this);" /> <a onclick="myFunction30()"><img height="20px" width="20px" style="margin-left: 10px; margin-bottom: 5px;" src="assets/img/close.png"></a></div><br>
+<div><input style="background-color: #DA70D6; width: 250px; border:1px solid #000000; border-radius: 10px;" type='file' onchange="readURL1(this);" /> <a onclick="myFunction30()"><img height="20px" width="20px" style="margin-left: 10px; margin-bottom: 5px;" src="assets/img/close.png"></a></div><br>
  <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="frame1Name"></span><br>
       <span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="frame2Name" style="text-align: center;"></span>
       <br>
@@ -182,7 +184,118 @@ if(i<0) i=endofframe2-1;
 nextframe2();
 </script>
     </main>
+ <abc style="height: 800px;" class="page projects-page">
 
+<center>
+<div style="position: relative;display: block; left: 0px;left: 0; top: 150px;text-align: center;">
+<div><img id="frame3Image" height="300px" width="290px" style="position: absolute;display: block;right: 0;left: 0px;vertical-align: middle; margin: auto;top:300px;z-index: 2;"src=""/>
+<img id="frame4Image" class="cp1" height="160px" width="120px" style="position: absolute;top:300px;display: block; right:46%;margin: auto; margin-left: 40.7px;margin-top: 71px; z-index: 1;" src=""/>
+  </center>
+  </div>
+
+  <center>
+    <br>
+    <br><br><br>
+      
+<script type="text/javascript">
+     function readURL(input) {
+         
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.cp1')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+         
+      
+        }
+</script>
+<h2 style="text-align: center; background-color: #ff726f; color: #ffffff; ">5 x 7</h2>
+<button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev1">Previous frame</button>
+<button style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext1">Next frame</button><br>
+<br>
+<button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;" id="btnP1">Previous image</button>
+<button  style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN1">Next image</button>
+<br>
+      <br>
+<div><input style="background-color: #DA70D6; width: 250px; border:1px solid #000000; border-radius: 10px;" type='file' onchange="readURL(this);" /> <a onclick="myFunction30()"><img height="20px" width="20px" style="margin-left: 10px; margin-bottom: 5px;" src="assets/img/close.png"></a></div><br>
+ <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="frame3Name"></span><br>
+      <span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="frame4Name" style="text-align: center;"></span>
+      <br>
+<span" style="text-align: center; font-weight: bold;">Price :</span><span style="text-align: center; font-weight: bold;" id="frame3Prc"></span><span style="text-align: center; font-weight: bold;">+</span><span  style="text-align: center; font-weight: bold;" id="frame4Prc"></span>
+      </div>
+<br>
+ 
+</center>
+<script type="text/javascript"> var frame3 = [
+    {name:"PG101",prc:150, src: "assets/img/frame23.png"}
+];
+
+var endofframe3=frame3.length;
+var i = -1;
+
+btnPrev1.addEventListener('click', previousframe3);
+btnNext1.addEventListener('click', nextframe3);
+
+function nextframe3(){
+i++;
+if(i==endofframe3) i=0;
+
+  frame3Name.innerHTML=frame3[i].name;
+    frame3Prc.innerHTML=frame3[i].prc;
+  frame3Image.setAttribute('src', frame3[i].src);
+}
+
+function previousframe3(){
+i--;
+if(i<0) i=endofframe3-1;
+  frame3Name.innerHTML=frame3[i].name;
+     frame3Prc.innerHTML=frame3[i].prc;
+  frame3Image.setAttribute('src', frame3[i].src);
+  
+}
+
+nextframe3();
+</script>
+<script type="text/javascript"> var frame4 = [
+
+  {name:"NTG4",prc:20 ,src: "assets/img/b2.jpg"},
+   {name:"NTS2",prc:20 ,src: "assets/img/rd2.jpg"},
+    {name:"NTS2",prc:20 ,src: "assets/img/k1.jpg"}
+];
+
+var endofframe4=frame4.length;
+var i = -1;
+
+btnP1.addEventListener('click', previousframe4);
+btnN1.addEventListener('click', nextframe4);
+
+function nextframe4(){
+i++;
+if(i==endofframe4) i=0;
+
+  frame4Name.innerHTML=frame4[i].name;
+     frame4Prc.innerHTML=frame4[i].prc;
+  frame4Image.setAttribute('src', frame4[i].src);
+}
+
+function previousframe4(){
+i--;
+if(i<0) i=endofframe4-1;
+  frame4Name.innerHTML=frame4[i].name;
+     frame4Prc.innerHTML=frame4[i].prc;
+  frame4Image.setAttribute('src', frame4[i].src);
+  
+}
+
+nextframe4();
+</script>
+    </abc>
+  
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Animated-Type-Heading.js"></script>
