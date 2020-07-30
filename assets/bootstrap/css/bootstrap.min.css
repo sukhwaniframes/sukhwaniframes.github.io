@@ -3318,13 +3318,13 @@ input[type="submit"].btn-block {
 }
 .custom-select {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #495057;
+ color: #fff;
   vertical-align: middle;
-  background: #fff
+ background: #0e6cc9
     url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E")
     no-repeat right 0.75rem center;
   background-size: 8px 10px;
