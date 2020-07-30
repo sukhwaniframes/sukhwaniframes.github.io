@@ -96,6 +96,22 @@ document.addEventListener('contextmenu', event => event.preventDefault());
       
         }
 </script>
+      <select class="browser-default custom-select" id="sele" onchange="myFunction3()">
+    <option value="imgfrm.html">Sai Baba</option>
+    <option value="imgfrmh.html">Hanuman</option>
+    <option value="imgfrmsh.html">Shivaji</option>
+           <option value="imgfrmd.html">Durga Mata</option>
+    <option value="imgfrms.html">Shiv</option>
+    <option value="imgfrmg.html">Ganesh</option>
+    <option value="imgfrmk.html">Krishna</option>
+  </select>
+
+</div>
+<script type="text/javascript">
+  function myFunction3(){
+     var x = document.getElementById("sele").value;
+            location.replace(x)} 
+</script>
      <div style="display: inline-block; vertical-align: middle;"><img style=" margin-bottom: 15px;" src="assets/img/title_left.png"><span style="font-size: 30px; color:#940000; font-weight: bold;">&nbsp;&nbsp;&nbsp;9 x 12&nbsp;&nbsp;&nbsp;</span><img style=" margin-bottom: 15px;" src="assets/img/title_right.png"></div>
 <br><br>
 <button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev">Previous frame</button>
@@ -151,8 +167,6 @@ nextframe1();
 
   {name:"NTG4",prc:20 ,src: "assets/img/sb5.jpg"},
    {name:"NTS2",prc:20 ,src: "assets/img/sb4.jpg"},
-    {name:"NTS2",prc:20 ,src: "assets/img/d1.jpg"},
-     {name:"NTS2",prc:20 ,src: "assets/img/h3.jpg"},
       {name:"NTS2",prc:40 ,src: "assets/img/sb5.jpg"},
     {name:"NTS2",prc:40 ,src: "assets/img/sb3.jpg"}
 ];
