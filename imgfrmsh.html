@@ -387,22 +387,9 @@ if(i<0) i=endofframe5-1;
 nextframe5();
 </script>
 <script type="text/javascript"> var frame6 = [
-
-  {name:"NTG4",prc:20 ,src: "assets/img/rosh1.jpg"},
-   {name:"NTS2",prc:20 ,src: "assets/img/rosh2.jpg"},
-    {name:"NTS2",prc:20 ,src: "assets/img/rosh4.jpg"},
-     {name:"NTS2",prc:20 ,src: "assets/img/rosh5.jpg"},
       {name:"NTS2",prc:20 ,src: "assets/img/sh6.jpg"},
        {name:"NTS2",prc:20 ,src: "assets/img/sh7.jpg"},
-        {name:"NTS2",prc:20 ,src: "assets/img/rosh8.jpg"},
-         {name:"NTS2",prc:20 ,src: "assets/img/rosh9.jpg"},
-          {name:"NTS2",prc:20 ,src: "assets/img/rosh10.jpg"},
-           {name:"NTS2",prc:20 ,src: "assets/img/rosh11.jpg"},
-            {name:"NTS2",prc:20 ,src: "assets/img/rosh12.jpg"},
-             {name:"NTS2",prc:20 ,src: "assets/img/rosh13.jpg"},
              {name:"NTS2",prc:20 ,src: "assets/img/sh14.jpg"},
-             {name:"NTS2",prc:20 ,src: "assets/img/rosh15.jpg"},
-    {name:"NTS2",prc:20 ,src: "assets/img/rosh3.jpg"}
 ];
 
 var endofframe6=frame6.length;
@@ -430,6 +417,128 @@ if(i<0) i=endofframe6-1;
 }
 
 nextframe6();
+</script>
+    </div>
+   <div style="height: 800px;" class="page projects-page">
+
+<center>
+<div style="position: relative;display: block; left: 0px;left: 0; top: 150px;text-align: center; ">
+<img id="frame7Image" height="300px" width="290px" style="position: absolute; display: block;transform: rotate(270deg);right: 0;left: 0px;vertical-align: middle; margin: auto;top:300px;z-index: 2;"src=""/>
+<img id="frame8Image" class="cp2" height="157px" width="239px" style="position: absolute;top:371px;margin-right:auto;margin-left:auto;left: 0;right: 0; z-index: 1;" src=""/>
+</div>
+  </center>
+  
+
+  <center>
+    <br>
+    <br><br><br>
+      
+<script type="text/javascript">
+     function readURL(input) {
+         
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.cp2')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+         
+      
+        }
+</script>
+ <div style="display: inline-block; vertical-align: middle;"><img style=" margin-bottom: 15px;" src="assets/img/title_left.png"><span style="font-size: 30px; color:#940000; font-weight: bold;">&nbsp;&nbsp;&nbsp;18 x 12(12 x 18 Vertical)&nbsp;&nbsp;&nbsp;</span><img style=" margin-bottom: 15px;" src="assets/img/title_right.png"></div>
+<br><br>
+<button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;"  id="btnPrev3">Previous frame</button>
+<button style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnNext3">Next frame</button><br>
+<br>
+<button style="background-color: #ff726f;width:150px;  color: #ffffff; border-radius: 20px;outline: 0;" id="btnP3">Previous image</button>
+<button  style="background-color: #90ee90;width: 150px; color: #ffffff; border-radius: 20px;outline: 0;" id="btnN3">Next image</button>
+<br>
+      <br>
+<div><input style="background-color: #DA70D6; width: 250px; border:1px solid #000000; border-radius: 10px;" type='file' onchange="readURL(this);" /> <a onclick="myFunction30()"><img height="20px" width="20px" style="margin-left: 10px; margin-bottom: 5px;" src="assets/img/close.png"></a></div><br>
+ <span style="text-align: center; font-weight: bold;">Frame</span><br><span style="text-align: center;">Model No. :</span><span style="text-align: center;" id="frame7Name"></span><br>
+      <span style="text-align: center; font-weight: bold">Picture</span><br><span style="text-align: center;">Model No. :</span><span id="frame8Name" style="text-align: center;"></span>
+      <br>
+<span" style="text-align: center; font-weight: bold;">Price :</span><span style="text-align: center; font-weight: bold;" id="frame7Prc"></span><span style="text-align: center; font-weight: bold;">+</span><span  style="text-align: center; font-weight: bold;" id="frame8Prc"></span>
+      </div>
+<br>
+ 
+</center>
+<script type="text/javascript"> var frame7 = [
+    {name:"PG101",prc:150, src: "assets/img/frame25.png"}
+];
+
+var endofframe7=frame7.length;
+var i = -1;
+
+btnPrev3.addEventListener('click', previousframe7);
+btnNext3.addEventListener('click', nextframe7);
+
+function nextframe7(){
+i++;
+if(i==endofframe7) i=0;
+
+  frame7Name.innerHTML=frame7[i].name;
+    frame7Prc.innerHTML=frame7[i].prc;
+  frame7Image.setAttribute('src', frame7[i].src);
+}
+
+function previousframe7(){
+i--;
+if(i<0) i=endofframe7-1;
+  frame7Name.innerHTML=frame7[i].name;
+     frame7Prc.innerHTML=frame7[i].prc;
+  frame7Image.setAttribute('src', frame7[i].src);
+  
+}
+
+nextframe7();
+</script>
+<script type="text/javascript"> var frame8 = [
+
+  {name:"NTG4",prc:20 ,src: "assets/img/rosh1.jpg"},
+   {name:"NTS2",prc:20 ,src: "assets/img/rosh2.jpg"},
+    {name:"NTS2",prc:20 ,src: "assets/img/rosh4.jpg"},
+     {name:"NTS2",prc:20 ,src: "assets/img/rosh5.jpg"},
+        {name:"NTS2",prc:20 ,src: "assets/img/rosh8.jpg"},
+         {name:"NTS2",prc:20 ,src: "assets/img/rosh9.jpg"},
+          {name:"NTS2",prc:20 ,src: "assets/img/rosh10.jpg"},
+           {name:"NTS2",prc:20 ,src: "assets/img/rosh11.jpg"},
+            {name:"NTS2",prc:20 ,src: "assets/img/rosh12.jpg"},
+             {name:"NTS2",prc:20 ,src: "assets/img/rosh13.jpg"},
+             {name:"NTS2",prc:20 ,src: "assets/img/rosh15.jpg"},
+    {name:"NTS2",prc:20 ,src: "assets/img/sh3.jpg"}
+];
+
+var endofframe8=frame8.length;
+var i = -1;
+
+btnP3.addEventListener('click', previousframe8);
+btnN3.addEventListener('click', nextframe8);
+
+function nextframe8(){
+i++;
+if(i==endofframe8) i=0;
+
+  frame8Name.innerHTML=frame8[i].name;
+     frame8Prc.innerHTML=frame8[i].prc;
+  frame8Image.setAttribute('src', frame8[i].src);
+}
+
+function previousframe8(){
+i--;
+if(i<0) i=endofframe8-1;
+  frame8Name.innerHTML=frame8[i].name;
+     frame8Prc.innerHTML=frame8[i].prc;
+  frame8Image.setAttribute('src', frame8[i].src);
+  
+}
+
+nextframe8();
 </script>
     </div>
   
