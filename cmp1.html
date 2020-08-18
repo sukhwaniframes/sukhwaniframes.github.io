@@ -40,14 +40,29 @@ function mdl() {
 document.getElementById("a122").select();}
 function myFunction() {
   var x = document.getElementById("mySelect").value;
-  if(x==1){
- // document.getElementById("demo").style.display="block";
- document.getElementById("5").style.display="block";
-  document.getElementById("6").style.display="none";}
-  if(x==2){
- // document.getElementById("demo").style.display="block";
- document.getElementById("6").style.display="block";
-  document.getElementById("5").style.display="none";}
+ switch(x){
+    case '1':document.getElementById("5").style.display="block";
+  document.getElementById("6").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="none";
+  break;
+  case '2':document.getElementById("6").style.display="block";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="none";
+  break;
+         case '3':document.getElementById("6").style.display="none";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="block";
+         document.getElementById("8").style.display="none";
+  break;
+         case '4':document.getElementById("6").style.display="none";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="block";
+  break;
+  default:x=1;
+  }
 }
             document.onkeydown = function(e) {
         if (e.ctrlKey && 
@@ -68,14 +83,10 @@ x=2;
 </script><center>
 <br><br><br><br>
 <select class="browser-default custom-select" onchange="myFunction()" id="mySelect">
-   <option value="1">PG101</option> 
-    <option value="2">PO101</option> 
-    <option value="imgfrmh.html">Hanuman</option>
-    <option value="imgfrm.html">Sai Baba</option>
-    <option value="imgfrmd.html">Durga Mata</option>
-    <option value="imgfrms.html">Shiv</option>
-    <option value="imgfrmg.html">Ganesh</option>
-    <option value="imgfrmk.html">Krishna</option>
+   <option value="1">FB101</option> 
+    <option value="2">FG101</option>
+    <option value="3">PG101</option> 
+    <option value="4">PO101</option> 
   </select>
    </center>
  <div id="5">
