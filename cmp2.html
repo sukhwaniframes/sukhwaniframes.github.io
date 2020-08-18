@@ -40,14 +40,29 @@ function myFunction() {
 function rmv(){
 document.getElementById("6").style.display="none";
 }
-  if(x==1){
- // document.getElementById("demo").style.display="block";
- document.getElementById("5").style.display="block";
-  document.getElementById("6").style.display="none";}
- if(x==2){
- // document.getElementById("demo").style.display="block";
- document.getElementById("6").style.display="block";
-  document.getElementById("5").style.display="none";}
+  switch(x){
+    case '1':document.getElementById("5").style.display="block";
+  document.getElementById("6").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="none";
+  break;
+  case '2':document.getElementById("6").style.display="block";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="none";
+  break;
+         case '3':document.getElementById("6").style.display="none";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="block";
+         document.getElementById("8").style.display="none";
+  break;
+         case '4':document.getElementById("6").style.display="none";
+  document.getElementById("5").style.display="none";
+         document.getElementById("7").style.display="none";
+         document.getElementById("8").style.display="block";
+  break;
+  default:x=1;
+  }
 }
             document.onkeydown = function(e) {
         if (e.ctrlKey && 
@@ -65,14 +80,10 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </script><center>
 <br><br><br><br>
 <select class="browser-default custom-select" onchange="myFunction()" id="mySelect">
-   <option value="1" selected="true">PG101</option> 
+   <option value="1">PG101</option> 
     <option value="2">PO101</option> 
-    <option value="imgfrmh.html">Hanuman</option>
-    <option value="imgfrm.html">Sai Baba</option>
-    <option value="imgfrmd.html">Durga Mata</option>
-    <option value="imgfrms.html">Shiv</option>
-    <option value="imgfrmg.html">Ganesh</option>
-    <option value="imgfrmk.html">Krishna</option>
+    <option value="3">FB101</option>
+    <option value="4">FG101</option>
   </select>
    </center>
  <div id="5">
@@ -118,6 +129,45 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 <div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;border-top: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align:left;font-size: 20px;padding-top: 10px;padding-bottom: 10px;">ting</div>
      </center>
+ </div>
+<div id="7">
+  <br><br><br>
+  <center>
+  <br><img src="assets/img/frame18.png" style="width: 100px;height: 100px;">
+  <br><br>
+<p> PG101<br><p style="font-weight: bold;">&#8377; &nbsp;200</p>
+  </p>
+  <br>
+<div style="background-color: #DEDEDC;font-style: sans-serif;font-size: 20px;color: #989896;padding-top: 10px;padding-bottom: 10px; text-align: right;">Summ</div>
+
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align: right;font-size: 20px;padding-top: 10px;padding-bottom: 10px; text-align: right;">Mate</div>
+<br><button style="background-color: #F75D59;color: #ffffff; width: 90px;border-radius: 20px;border:0; ">Fiber</button><br><br>
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;border-top: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align: right;font-size: 20px;padding-top: 10px;padding-bottom: 10px; text-align: right;">Col</div>
+
+<div style="height: 220px;"><br><br><br><br>
+<button style="background-color:#463E3F; border-radius: 20px;border:0; width: 80px;color: #ffffff;margin-top:auto;margin-bottom: auto; ">Black</button></div>
+
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;border-top: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align:right;font-size: 20px;padding-top: 10px;padding-bottom: 10px;">Ligh</div>
+     </center>
+ </div>
+  <div id="8" style="display: none;">
+  <br><br><br>
+  <center>
+  <br><img src="assets/img/frame19.png" style="width: 100px;height: 100px;">
+  <br><br>
+<p> PG101<br><p style="font-weight: bold;">&#8377; &nbsp;200</p>
+  </p>
+  <br>
+<div style="background-color:#DEDEDC;font-style: sans-serif;font-size: 20px;color: #989896;padding-top: 10px;padding-bottom: 10px; text-align: right;">Summ</div>
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align: right;font-size: 20px;padding-top: 10px;padding-bottom: 10px; text-align: right;">Mate</div>
+<br><button style="background-color: #F75D59;color: #ffffff; width: 90px;border-radius: 20px;border:0; ">Fiber</button><br><br>
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;border-top: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align: right;font-size: 20px;padding-top: 10px;padding-bottom: 10px; text-align: right;">Col</div>
+
+<div style="height: 220px;"><br><br><br><br>
+<button style="background-color:#d4af37; border-radius: 20px;border:0; width: 80px;color: #ffffff;margin-top:auto;margin-bottom: auto; ">Golden</button></div>
+
+<div style="background-color: #ffffff; border-bottom: 1px solid #B6B6B4;border-top: 1px solid #B6B6B4;color: #989896;  font-style: sans-serif;text-align:right;font-size: 20px;padding-top: 10px;padding-bottom: 10px;">Ligh</div>
+      </center>
  </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
