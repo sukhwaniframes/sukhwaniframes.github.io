@@ -86,19 +86,21 @@
 
  </style>
   <script type="text/javascript">
-      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/od6/public/values?alt=json", function (data) {
+     $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/o8fvld8/public/values?alt=json", 
+     function (data) {
 
-      var sheetData = data.feed.entry;
+               var sheetData = data.feed.entry;
 
       var i;
       for (i = 0; i < sheetData.length; i++) {
 
-        var name = data.feed.entry[i]['gsx$_cn6ca']['$t'];
-       var age = data.feed.entry[i]['gsx$_cokwr']['$t'];
-        var email = data.feed.entry[i]['gsx$_cpzh4']['$t'];
+      
+        var uid = data.feed.entry[i].gsx$id.$t;
+  var dod = data.feed.entry[i].gsx$dod.$t;
+  var  state= data.feed.entry[i].gsx$status.$t;
+var booking = data.feed.entry[i].gsx$bdt.$t;
 
-        document.getElementById('demo').innerHTML += ('<tr>'+'<td>'+name+'<td>'+email+'</td>'+'<td>'+age+'</td>'+'</tr>');
-
+        document.getElementById('demo').innerHTML += ('<tr>'+'<td>'+id+'<td>'+state+'</td>'+'<td>'+booking+'</td>'+'<td>'+dod+'</td>'+'</tr>');
       }
     });
 
@@ -146,8 +148,9 @@
       <!-- Table head -->
       <thead>
         <tr>
-          <th>Name</th>
+          <th>Unique ID</th>
           <th>Status</th>
+ <th>Date of Booking</th>
  <th>Date Of Delivery</th>
         </tr>
       </thead>
