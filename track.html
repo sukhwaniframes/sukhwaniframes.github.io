@@ -74,9 +74,9 @@
       for (i = 0; i < sheetData.length; i++) {
 
         var uid = data.feed.entry[i].gsx$id.$t;
-  var dod = data.feed.entry[i].gsx$DateofDelivery.$t;
+  var dod = data.feed.entry[i].gsx$dateofdelivery.$t;
   var  state= data.feed.entry[i].gsx$status.$t;
-var booking = data.feed.entry[i].gsx$BookingDate.$t;
+var booking = data.feed.entry[i].gsx$bookingdate.$t;
 
         document.getElementById('demo').innerHTML += ('<div style=\"margin-top:15px;box-shadow:3px 3px 6px grey;background: linear-gradient(120deg, #8e0e00, #1f1c18);color:#ffffff;text-align:left; border-radius:20px;width:250px;padding-top:20px;padding-bottom:20px;padding-left:20px; \">'+"Tracking ID:"+'<span style=\"position: absolute;padding-left:40px; \">'+uid+'</span>'+'<br>'+"Status:"+'<span style=\"position: absolute;padding-left:78px; \">'+state+'</span>'+'<br>'+"Booking date:"+'<span style=\"position: absolute;padding-left:30px; \">'+booking+'</span>'+'<br>'+"Date of Delivery:"+'<span style=\"position: absolute;padding-left:9px; \">'+dod+'</span>'+'</div>');
 
