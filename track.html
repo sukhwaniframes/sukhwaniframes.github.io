@@ -84,7 +84,25 @@ var booking = data.feed.entry[i].gsx$bookingdate.$t;
     });
 
   </script>
- 
+ <script type="text/javascript">
+      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/ofyyeap/public/values?alt=json", function (data) {
+
+      var sheetData = data.feed.entry;
+
+      var i;
+      for (i = 0; i < sheetData.length; i++) {
+
+        var uid = data.feed.entry[i].gsx$uniqueid.$t;
+  var mode = data.feed.entry[i].gsx$medium.$t;
+  var  state= data.feed.entry[i].gsx$status.$t;
+var booking = data.feed.entry[i].gsx$bookingdate.$t;
+
+        document.getElementById('demo1').innerHTML += ('<div style=\"margin-top:15px;box-shadow:3px 3px 6px grey;background: linear-gradient(120deg, #8e0e00, #1f1c18);color:#ffffff;text-align:left; border-radius:20px;width:250px;padding-top:20px;padding-bottom:20px;padding-left:20px; \">'+"Tracking ID:"+'<span style=\"position: absolute;padding-left:40px; \">'+uid+'</span>'+'<br>'+"Status:"+'<span style=\"position: absolute;padding-left:78px; \">'+state+'</span>'+'<br>'+"Booking date:"+'<span style=\"position: absolute;padding-left:30px; \">'+booking+'</span>'+'<br>'+"Medium:"+'<span style=\"position: absolute;padding-left:65px; \">'+mode+'</span>'+'</div>');
+
+      }
+    });
+
+  </script>
 <h2 style="text-align: center;">Track Your Order</h2>
 <center><div style="background-color: #ffffff;width: 80%;border: 1px solid  #613480;border-radius: 20px;padding-bottom: 5px;padding-top: 5px;"><i class="fa fa-search" style="color:grey;"></i> <input style="width: 90%;outline: 0;border:0;" id="filter" type="text" placeholder="search.."></div></center>
        <center> <br><a href="track.html" style="text-decoration: none;"><span style="color:grey;">Refresh&nbsp;<i class="fa fa-refresh" style="color:grey;"></i> </span></a><br></center>
@@ -96,7 +114,7 @@ var booking = data.feed.entry[i].gsx$bookingdate.$t;
         count = 0;
 
       // Loop through the comment list
-      $('#demo div').each(function() {
+      $('#results div').each(function() {
 
 
         // If the list item does not contain the text phrase fade it out
@@ -116,6 +134,7 @@ var booking = data.feed.entry[i].gsx$bookingdate.$t;
   <center><br>
      <div id="results">
      <div id="demo"></div>
+          <div id="demo1"></div>
    </div>
    </center>
 <br>
