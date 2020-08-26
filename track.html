@@ -89,17 +89,23 @@ var booking = data.feed.entry[i].gsx$bookingdate.$t;
 
       var sheetData = data.feed.entry;
 
-      var i;
+         $("#filter").on("change keyup paste",function(){
       for (i = 0; i < sheetData.length; i++) {
 
-        var uid = data.feed.entry[i].gsx$uniqueid.$t;
+     
+  var uid = data.feed.entry[i].gsx$uniqueid.$t;
   var mode = data.feed.entry[i].gsx$medium.$t;
   var  state= data.feed.entry[i].gsx$status.$t;
 var booking = data.feed.entry[i].gsx$bookingdate.$t;
-
-        document.getElementById('demo1').innerHTML += ('<div style=\"margin-top:15px;box-shadow:3px 3px 6px grey;background: linear-gradient(120deg, #8e0e00, #1f1c18);color:#ffffff;text-align:left; border-radius:20px;width:250px;padding-top:20px;padding-bottom:20px;padding-left:20px; \">'+"Tracking ID:"+'<span style=\"position: absolute;padding-left:40px; \">'+uid+'</span>'+'<br>'+"Status:"+'<span style=\"position: absolute;padding-left:78px; \">'+state+'</span>'+'<br>'+"Booking date:"+'<span style=\"position: absolute;padding-left:30px; \">'+booking+'</span>'+'<br>'+"Medium:"+'<span style=\"position: absolute;padding-left:65px; \">'+mode+'</span>'+'</div>');
-
-      }
+var nam = data.feed.entry[i].gsx$name.$t;
+var item = data.feed.entry[i].gsx$items.$t;
+var phone = data.feed.entry[i].gsx$phoneno.$t;
+var add = data.feed.entry[i].gsx$address.$t;
+ if($("#filter").val() ==uid){
+        document.getElementById('demo1').innerHTML = ('<div style=\"margin-top:15px;box-shadow:3px 3px 6px grey;background: linear-gradient(120deg, #8e0e00, #1f1c18);color:#ffffff;text-align:left; border-radius:20px;width:90%;padding-top:70px;padding-bottom:70px;padding-left:40%; \">'+"Tracking ID:"+'<span style=\"position: absolute;padding-left:40px; \">'+uid+'</span>'+'<br>'+"Name:"+'<span style=\"position: absolute;padding-left:80px; \">'+nam+'</span>'+'<br>'+"Status:"+'<span style=\"position: absolute;padding-left:78px; \">'+state+'</span>'+'<br>'+"Booking date:"+'<span style=\"position: absolute;padding-left:30px; \">'+booking+'</span>'+'<br>'+"Medium:"+'<span style=\"position: absolute;padding-left:65px; \">'+mode+'</span>'+'<br>'+"Item:"+'<span style=\"position: absolute;padding-left:90px; \">'+item+'</span>'+'<br>'+"Phone No.:"+'<span style=\"position: absolute;padding-left:50px; \">'+phone+'</span>'+'<br>'+"Address:"+'<span style=\"position: absolute;padding-left:67px; \">'+add+'</span>'+'</div>');
+}  
+} 
+  });
     });
 
   </script>
