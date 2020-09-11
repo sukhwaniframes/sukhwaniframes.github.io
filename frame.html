@@ -28,23 +28,23 @@
     <link rel="stylesheet" href="assets/css/Responsive-footer.css">
     <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
     <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
-    
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      
  <script type="text/javascript">
- 
+
       $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
 
       var sheetData = data.feed.entry;
-  var uid = data.feed.entry[0].gsx$pg.$t;
+
+  var uid = data.feed.entry[0].gsx$pg101.$t;
   if(uid<=10){
  
-        document.getElementById("demo145").innerHTML = ('<span>'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
+        document.getElementById("demo145").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
 
 }
 });
+    
   </script>
-      <script type="text/javascript">
+    <script type="text/javascript">
         function myFunction1(){
             location.replace("frame.html")
         }
