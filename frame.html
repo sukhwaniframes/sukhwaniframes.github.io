@@ -54,50 +54,38 @@ window.setInterval(function(){
 
 }        
 });
-   
-}, 1000);
- 
-     window.setInterval(function(){
-      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
-
       var sheetData = data.feed.entry;
 
-  var uid = data.feed.entry[0].gsx$sdfyghj.$t;
-  if(uid<=10){
+  var uip = data.feed.entry[0].gsx$sdfyghj.$t;
+  if(uip<=10){
  
-        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
+        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uip+'</span>'+" Pcs Left"+'</span>');
 
 }
-  if(uid==0){
+  if(uip==0){
  
         document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
 
 } 
-          if(uid>10){
+          if(uip>10){
  
         document.getElementById("demo146").innerHTML = (' ');
 
 }        
-});
-   
-}, 1000);
- window.setInterval(function(){
-      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
-
       var sheetData = data.feed.entry;
 
-  var uid = data.feed.entry[0].gsx$fg.$t;
-  if(uid<=10){
+  var uis = data.feed.entry[0].gsx$fg.$t;
+  if(uis<=10){
  
-        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
+        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uis+'</span>'+" Pcs Left"+'</span>');
 
 }
-  if(uid==0){
+  if(uis==0){
  
         document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
 
 } 
-          if(uid>10){
+          if(uis>10){
  
         document.getElementById("demo147").innerHTML = (' ');
 
