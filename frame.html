@@ -57,6 +57,55 @@ window.setInterval(function(){
    
 }, 1000);
  
+     window.setInterval(function(){
+      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
+
+      var sheetData = data.feed.entry;
+
+  var uid = data.feed.entry[0].gsx$pgg.$t;
+  if(uid<=10){
+ 
+        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
+
+}
+  if(uid==0){
+ 
+        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
+
+} 
+          if(uid>10){
+ 
+        document.getElementById("demo146").innerHTML = (' ');
+
+}        
+});
+   
+}, 1000);
+ window.setInterval(function(){
+      $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
+
+      var sheetData = data.feed.entry;
+
+  var uid = data.feed.entry[0].gsx$fg.$t;
+  if(uid<=10){
+ 
+        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
+
+}
+  if(uid==0){
+ 
+        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
+
+} 
+          if(uid>10){
+ 
+        document.getElementById("demo147").innerHTML = (' ');
+
+}        
+});
+   
+}, 1000);
+ 
   </script>
     <script type="text/javascript">
         function myFunction1(){
@@ -404,9 +453,10 @@ document.addEventListener('contextmenu', event => event.preventDefault());
                                 <div class="card border-0"><img id="img1" src="assets/img/frame1.jpg" style="height:350px; width:350px;" alt="Card Image" class="card-img-top scale-on-hover"></a>
                                     <div class="card-body">
                                             <h6>Plastic Golden Frame</h6>
+                                         <span style="display: inline-block;color: red; font-size:12px;" id="demo146"></span>
                                        <B><div id="breathing-button">Model No. : PG101&nbsp; <span style="color: #ffffff; border-radius: 30px; background-color: red;font-size:10px;">&nbsp;&nbsp;New&nbsp;&nbsp;</span>&nbsp;&nbsp;<span style="color: #ffffff;font-size:10px; border-radius: 30px; background-color: purple;">&nbsp;&nbsp;Trending&nbsp;&nbsp;</span></div></B> 
-                                       <span>
-                                      
+                                      <br>
+                                       
                                             <button style="width:100px;background-color:#ffd700;color: #ffffff;outline:0; border-radius: 10px;" onclick="chng1();">&nbsp;&nbsp;Golden&nbsp;&nbsp;</button></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><button style="width:100px;outline:0;background-color:#ff8c00;color: #ffffff;border-radius: 10px;" onclick="chng2();">&nbsp;&nbsp;Orange&nbsp;&nbsp;</button></span>
                                         <br><br><span><button style="background-color:red;outline:0;width:100px;border-radius: 10px;color: #ffffff;" onclick="chng3();">&nbsp;&nbsp;Red&nbsp;&nbsp;</button></span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<span><button style="background-color:#ff1dce;outline:0;width:100px;border-radius: 10px;color: #ffffff;" onclick="chng4();">&nbsp;&nbsp;Magenta&nbsp;&nbsp;</button></span>
@@ -420,6 +470,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
                                 <div class="card border-0"><img src="assets/img/frame6.jpg" style="max-height:350px; width:350px;" alt="Card Image" class="card-img-top scale-on-hover"></a>
                                 <div class="card-body">  
                                     <h6>Plastic Purple Lighting Frame</h6>
+                                     <span style="display: inline-block;color: red; font-size:12px;" id="demo147"></span>
                                        <B><div id="breathing-button">Model No. : PPL101 &nbsp;<!--<span style="color: #ffffff; border-radius: 30px; background-color: purple;">&nbsp;&nbsp;Trending&nbsp;&nbsp;</span>--></div></B> 
                                     <p class="text-muted card-text">Sizes Available : <br>9 x 11<br>8 x 12<br>12 x 16</p>
                                     <br>
