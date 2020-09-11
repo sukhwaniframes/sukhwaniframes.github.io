@@ -43,7 +43,16 @@ window.setInterval(function(){
         document.getElementById("demo145").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
 
 }
-         
+  if(uid==0){
+ 
+        document.getElementById("demo145").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
+
+} 
+          if(uid>10){
+ 
+        document.getElementById("demo145").innerHTML = (' ');
+
+}        
 });
    
 }, 1000);
