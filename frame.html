@@ -54,42 +54,6 @@ window.setInterval(function(){
 
 }        
 });
-  
-  var uip = data.feed.entry[0].gsx$sdfyghj.$t;
-  if(uip<=10){
- 
-        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uip+'</span>'+" Pcs Left"+'</span>');
-
-}
-  if(uip==0){
- 
-        document.getElementById("demo146").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
-
-} 
-          if(uip>10){
- 
-        document.getElementById("demo146").innerHTML = (' ');
-
-}        
-   
-  var uis = data.feed.entry[0].gsx$fg.$t;
-  if(uis<=10){
- 
-        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uis+'</span>'+" Pcs Left"+'</span>');
-
-}
-  if(uis==0){
- 
-        document.getElementById("demo147").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Out Of Stock "+'</span>');
-
-} 
-          if(uis>10){
- 
-        document.getElementById("demo147").innerHTML = (' ');
-
-}        
-});
-   
 }, 1000);
  
   </script>
