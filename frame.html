@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script type="text/javascript">
-
+window.setInterval(function(){
       $.getJSON("https://spreadsheets.google.com/feeds/list/1rs23FVPWGUPXwPzEfkUdooBRuuj3uYq9hhQixpu60PU/oxyzs0p/public/values?alt=json", function (data) {
 
       var sheetData = data.feed.entry;
@@ -44,7 +44,9 @@
 
 }
 });
-    
+   
+}, 5000);
+ 
   </script>
     <script type="text/javascript">
         function myFunction1(){
