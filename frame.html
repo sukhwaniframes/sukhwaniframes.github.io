@@ -40,7 +40,8 @@ window.setInterval(function(){
   var uid = data.feed.entry[0].gsx$pg101.$t;
            var prc = data.feed.entry[0].gsx$pg101prcnew.$t;
           var prc1 = data.feed.entry[0].gsx$pg101prcold.$t;
-           document.getElementById("price145").innerHTML = ('<span>'+'<span style="\ font-weight:bold;font-size:15px; \">'+"&#8377;"+prc+"nbsp;"+'</span>'+'<span style="\ font-size:10px;color:grey;\">'+prc1+'</span>'+'</span>');
+          var per = (prc1-prc)/prc1*100;
+           document.getElementById("price145").innerHTML = ('<span>'+'<span style="\ font-weight:bold;font-size:15px; color:black; \">'+"&#8377;"+prc+nbsp;+nbsp;+per+"% Off"+nbsp;+nbsp;+'</span>'+'<span style="\ font-size:10px;text-decoration:line-through; color:grey;\">'+prc1+'</span>'+'</span>');
   if(uid<=10){
  
         document.getElementById("demo145").innerHTML = ('<span style="\ color:red;font-weight:bold; \">'+"Hurry Up only "+'<span>'+uid+'</span>'+" Pcs Left"+'</span>');
