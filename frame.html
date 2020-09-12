@@ -40,7 +40,8 @@ window.setInterval(function(){
   var uid = data.feed.entry[0].gsx$pg101.$t;
            var prc = data.feed.entry[0].gsx$pg101prcnew.$t;
           var prc1 = data.feed.entry[0].gsx$pg101prcold.$t;
-          var per = (prc1-prc)/prc1*100;
+          var pr = (prc1-prc)/prc1*100;
+          var per = pr.substring(0, 4);
            document.getElementById("price145").innerHTML = ('<span>'+'<span style="\ font-weight:bold;font-size:18px; color:black;\">'+"&#8377;"+prc+'</span>'+'&nbsp;&nbsp;&nbsp;'+'<span style="\ font-size:15px;color:grey;text-decoration: line-through;font-weight:bold;\">'+prc1+'&nbsp;&nbsp;'+'</span>'+'<span style="\ font-size:15px;color:green;font-weight:bold;\" >'+per+"% Off"+'</span>'+'</span>');
   if(uid<=10){
  
