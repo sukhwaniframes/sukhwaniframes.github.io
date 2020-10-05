@@ -35,6 +35,39 @@
             margin-left:auto;
             margin-right: auto; 
         }
+        
+h2 {
+    font-family: Arial, Verdana;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #091f2f;
+    text-transform: uppercase;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
     </style>
 </head>
 
@@ -91,23 +124,80 @@ document.addEventListener('contextmenu', event => event.preventDefault());
         <center>
         <p style="color: grey">*This is a chatbot, It will reply immediately.</p>
         </center>
+        <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+  <div class="container">
+  
+	  <h2>Frequently Asked Questions... </h2>
+	  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+				Are Mobile Payments Accepted ?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+			<div class="panel-body px-3 mb-4">
+			  <p>You can pay in</p>
+<ul>
+<li>Cash</li>
+<li>Mobile Payment (Via UPI)</li>
+</ul>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+				How to Reach (Address)?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+			<div class="panel-body px-3 mb-4">
+			  <p>Infront of Kamal Talkies, Burhanpur, Madhya Pradesh,450331</p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+				Can we get Refund if product is damaged?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+			<div class="panel-body px-3 mb-4">
+			  <p>No can't get Refund, But you can exchange it within 4 days of Delivery </p>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+			<h3 class="panel-title">
+			  <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+				How to Contact the Owner?
+			  </a>
+			</h3>
+		  </div>
+		  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+			<div class="panel-body px-3 mb-4">
+			  <p>You can Visit <a href="contact.html">this</a> page to for more details</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  
+  </div>
+</section>
     </main>
-    <!--
-    <footer class="page-footer">
-        <p class="text-center" style="margin-top:30px;margin-bottom:15px;">
-        
-            <a href="https://www.instagram.com/technobot.siddharth.2526/" style="font-size:35px;"><i class="fa fa-instagram"
-                    style="color:rgb(0,0,0);margin-right:0px;"></i></a>
-            <a href="https://twitter.com/SiddharthDayal1/" style="font-size:35px;"><i
-                    class="icon ion-social-twitter" style="color:rgb(0,0,0);"></i></a>
-            <a href="https://www.linkedin.com/in/Siddharth-Dayalwal/" style="font-size:35px;"><i
-                    class="icon ion-social-linkedin" style="color:rgb(0,0,0);"></i></a>
-            <a href="https://github.com/siddharthdayalwal/" style="font-size:35px;"><i class="fa fa-github" style="color:rgb(0,0,0);"></i></a>
-            <a href="https://www.facebook.com/siddharth.dayalwal" style="font-size:35px;"><i
-                    class="fa fa-facebook-square" style="color:rgb(0,0,0);"></i></a>
-            
-        </p>
-    </footer>-->
+   
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Animated-Type-Heading.js"></script>
